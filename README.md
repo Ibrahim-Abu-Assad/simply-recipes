@@ -28,4 +28,8 @@ The project showcases a clean layout with a hero section, navigation menu, and i
    ```
 2. Open index.html in your browser.
 
+## Live Preview 
+URL : 
+https://ibrahim-abu-assad.github.io/simply-recipes/
+
 
