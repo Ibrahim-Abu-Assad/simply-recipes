@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Simply Recipes | Home</title>
+</head>
+<body>
+
+<div class="Hold-everything">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-links-container">
+            <img src="logo.svg" alt="Logo" class="logo-img" />
+            <div class="nav-links-container">
+                <ul class="list-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Tags</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li class="contact-in-menu"><button class="nav-btn">Contact</button></li>
+                </ul>
+            </div>
+        </div>
+        <button class="nav-btn contact-main">Contact</button>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Main -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Simply Recipes</h1>
+                <p>No Fluff, Just Recipes</p>
+            </div>
+        </section>
+
+        <section class="cards-section">
+            <div class="grid-container">
+                <div class="recipes-names">
+                    <span class="recipes-word">Recipes</span>
+                    <span class="recipes-type">Beef (1)</span>
+                    <span class="recipes-type">Breakfast (2)</span>
+                    <span class="recipes-type">Carrots (3)</span>
+                    <span class="recipes-type">Food (4)</span>
+                </div>
+                <div class="card card1">
+                    <img src="recipes/recipe-1.jpeg" alt="recipe-1" class="recipes-image" />
+                    <p class="recipes-name">Carne Asada</p>
+                    <span class="recipes-prep">Prep : 15min | Cook : 5min</span>
+                </div>
+                <div class="card card2">
+                    <img src="recipes/recipe-2.jpeg" alt="recipe-1" class="recipes-image" />
+                    <p class="recipes-name">Greek Ribs</p>
+                    <span class="recipes-prep">Prep : 15min | Cook : 5min</span>
+                </div>
+                <div class="card card3">
+                    <img src="recipes/recipe-3.jpeg" alt="recipe-1" class="recipes-image" />
+                    <p class="recipes-name">Vegetable Soup</p>
+                    <span class="recipes-prep">Prep : 15min | Cook : 5min</span>
+                </div>
+                <div class="card card4">
+                    <img src="recipes/recipe-4.jpeg" alt="recipe-1" class="recipes-image" />
+                    <p class="recipes-name">Banana Pancakes</p>
+                    <span class="recipes-prep">Prep : 15min | Cook : 5min</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</div>
+
+<footer>
+    <div class="footer-copy-right">© 2025 <span class="footer-simply-recipes">SimplyRecipes</span> Built by <span class="ibrahim">Ibrahim Abu-Assad</span></div>
+</footer>
+
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navList = document.querySelector('.list-nav');
+
+menuToggle.addEventListener('click', () => {
+  navList.classList.toggle('show');
+});
+</script>
+
+</body>
+</html>
